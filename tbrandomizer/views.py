@@ -1,4 +1,6 @@
-from django.http import HttpResponse
+"""View functions for Tbrandomizer"""
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Hello, world")
+    """Returns main tbrandomizer view"""
+    return render(request, 'tbrandomizer/index.html')
